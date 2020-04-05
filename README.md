@@ -92,7 +92,7 @@ Create a new site
 sudo nano /etc/nginx/sites-available/[site-name]
 ```
 
-```json
+```
 server {
     listen 80;
     server_name example.com;
