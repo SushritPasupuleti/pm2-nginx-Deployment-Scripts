@@ -188,3 +188,17 @@ pm2 start app.js
 | `pm2 start app.js --no-daemon`      | Run pm2 daemon in the foreground if it doesn't exist already	 |
 | `pm2 start app.js --no-vizion`      | Skip vizion features (versioning control)                      |
 | `pm2 start app.js --no-autorestart` | Do not automatically restart app                               |
+
+## Git Sync
+Ignores local changes on server
+```
+git reset --hard
+git pull
+```
+
+## .env Updates
+Modify .env in client as follows:
+```
+REACT_APP_API_URL=http://localhost:5000/ => REACT_APP_API_URL=http://148.72.208.218/api/
+```
+
