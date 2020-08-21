@@ -92,7 +92,7 @@ Create a new site
 sudo nano /etc/nginx/sites-available/[site-name]
 ```
 
-```json
+```
 server {
     listen 80;
     server_name example.com;
@@ -128,11 +128,6 @@ pm2 start app.js
 ```
 
 ### PM2 Cheatsheet
-
-```
-pm2 resurrect
-```
-to restore pm2 processes after system restart or crash (pm2 list must be saved using ```pm2 save```)
 
 ### Fork mode
 
@@ -194,22 +189,16 @@ to restore pm2 processes after system restart or crash (pm2 list must be saved u
 | `pm2 start app.js --no-vizion`      | Skip vizion features (versioning control)                      |
 | `pm2 start app.js --no-autorestart` | Do not automatically restart app                               |
 
-### Docker 
-
+## Git Sync
+Ignores local changes on server
 ```
-sudo docker run -t -d -p 1337:9000 --network="host" sushritlawliet/braggi
-```
-
-### ENV
-
-Windows:
-
-```shell
-set NODE_ENV=production
+git reset --hard
+git pull
 ```
 
-Linux or other unix based system :
-
-```shell
-export NODE_ENV=production
+## .env Updates
+Modify .env in client as follows:
 ```
+REACT_APP_API_URL=http://localhost:5000/ => REACT_APP_API_URL=http://148.72.208.218/api/
+```
+
