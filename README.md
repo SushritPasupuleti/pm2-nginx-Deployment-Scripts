@@ -202,3 +202,21 @@ Modify .env in client as follows:
 REACT_APP_API_URL=http://localhost:5000/ => REACT_APP_API_URL=http://148.72.208.218/api/
 ```
 
+### Docker 
+
+```
+sudo docker run -t -d -p 1337:9000 --network="host" sushritlawliet/braggi
+```
+
+### ENV
+
+Windows:
+
+```shell
+set NODE_ENV=production
+```
+
+Linux or other unix based system :
+
+```shell
+export NODE_ENV=production
