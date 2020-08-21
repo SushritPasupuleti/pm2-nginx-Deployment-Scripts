@@ -129,6 +129,11 @@ pm2 start app.js
 
 ### PM2 Cheatsheet
 
+```
+pm2 resurrect
+```
+to restore pm2 processes after system restart or crash (pm2 list must be saved using ```pm2 save```)
+
 ### Fork mode
 
 | Command                          | Description              |
@@ -188,3 +193,23 @@ pm2 start app.js
 | `pm2 start app.js --no-daemon`      | Run pm2 daemon in the foreground if it doesn't exist already	 |
 | `pm2 start app.js --no-vizion`      | Skip vizion features (versioning control)                      |
 | `pm2 start app.js --no-autorestart` | Do not automatically restart app                               |
+
+### Docker 
+
+```
+sudo docker run -t -d -p 1337:9000 --network="host" sushritlawliet/braggi
+```
+
+### ENV
+
+Windows:
+
+```shell
+set NODE_ENV=production
+```
+
+Linux or other unix based system :
+
+```shell
+export NODE_ENV=production
+```
