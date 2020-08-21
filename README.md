@@ -220,3 +220,18 @@ Linux or other unix based system :
 
 ```shell
 export NODE_ENV=production
+```
+
+
+## Mongo
+
+### Admin user
+```js
+db.createUser(
+  {
+    user: "lawlieto",
+    pwd: passwordPrompt(), // or cleartext password
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+  }
+)
+```
