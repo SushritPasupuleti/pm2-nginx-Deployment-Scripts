@@ -114,6 +114,20 @@ Restart Nginx
 sudo service nginx restart
 ```
 
+## Node and NPM Setup
+
+### 1. Install Node
+
+```
+sudo apt install nodejs
+```
+
+### 2. Install NPM
+
+```
+sudo apt install npm
+```
+
 ## PM2 Setup
 
 ### 1. Install
