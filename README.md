@@ -128,6 +128,12 @@ sudo apt install nodejs
 sudo apt install npm
 ```
 
+### 3. Install Yarn
+
+```
+npm install --global yarn
+```
+
 ## PM2 Setup
 
 ### 1. Install
