@@ -147,6 +147,12 @@ start app
 pm2 start app.js
 ```
 
+for nextjs
+
+```
+pm2 start npm --name "next" -- start
+```
+
 ### PM2 Cheatsheet
 
 ### Fork mode
