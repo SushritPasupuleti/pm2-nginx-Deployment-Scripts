@@ -1,4 +1,4 @@
-# Prepare Production Environment for Deploypent using Nginx and pm2
+# Prepare Production Environment for Deployment using Nginx and pm2
  
 ## Nginx Setup
 ### 1. Install Nginx
