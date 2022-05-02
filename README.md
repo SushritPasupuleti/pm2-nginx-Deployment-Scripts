@@ -46,7 +46,7 @@ OpenSSH (v6)               ALLOW       Anywhere (v6)
 Nginx HTTP (v6)            ALLOW       Anywhere (v6)
 ```
 
-If `inachtive`
+If `inactive`
 
 ```bash
 sudo ufw enable
