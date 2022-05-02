@@ -52,6 +52,12 @@ If `inactive`
 sudo ufw enable
 ```
 
+Check if config is valid with:
+
+```bash
+nginx -t
+```
+
 
 ### 3. Check Nginx Server
 ```
