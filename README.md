@@ -46,6 +46,13 @@ OpenSSH (v6)               ALLOW       Anywhere (v6)
 Nginx HTTP (v6)            ALLOW       Anywhere (v6)
 ```
 
+If `inachtive`
+
+```bash
+sudo ufw enable
+```
+
+
 ### 3. Check Nginx Server
 ```
 systemctl status nginx
